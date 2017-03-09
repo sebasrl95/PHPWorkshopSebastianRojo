@@ -39,6 +39,10 @@ h1 {
     color: white;
 }
 
+#td-message {
+    padding: 1em;
+}
+
 section .td-container {
     position: relative;
     width: 100%;
@@ -94,4 +98,8 @@ section .td-article-content h2 {
 
 section .td-article-content p {
     font-size: 16px;
+}
+
+#td-new-article #td-image-article {
+    height: 200px;
 }

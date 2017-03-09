@@ -7,15 +7,16 @@ Version 1.2
 
 Date: March 9, 2017
 
+- Included message if there's not articles
+- Added view of create article
+
 Version 1.1
 ================
 
 Date: March 8, 2017
 
 - Added default controller
-- Added default view
-- Added article model
-- Configured database
+- Integration of data with database
 - Removed index.php from the url
 - Added jQuery
 - Added bootstrap

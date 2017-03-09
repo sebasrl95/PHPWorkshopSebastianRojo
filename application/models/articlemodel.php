@@ -23,7 +23,7 @@ class ArticleModel extends CI_Model {
             $data = array(
                 'title' => $title ,
                 'description' => $description,
-                'image_url' => $file_name
+                'image_name' => $file_name
             );
 
             if ($this->db->insert('tb_articles', $data)) {

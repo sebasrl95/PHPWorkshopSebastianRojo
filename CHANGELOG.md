@@ -20,6 +20,7 @@ Date: March 8, 2017
 - Added jQuery
 - Added bootstrap
 - Added handlebars
+- Added custom style for all articles page
 
 Version 1.0
 ================

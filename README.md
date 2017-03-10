@@ -28,7 +28,7 @@ Changelog
 **************************
 
 You can find the changelog in
-<https://github.com/sebasrl95/PHPWorkshopSebastianRojo/blob/master/CHANGELOG.md>`_.
+<https://github.com/sebasrl95/PHPWorkshopSebastianRojo/blob/master/CHANGELOG.md>
 
 *******************
 Server Requirements

@@ -46,4 +46,17 @@ class ArticleModel extends CI_Model {
              return null;
          }
      }
+
+     public function delete($id = -1) {
+        if ($id != -1) {
+            $this->db->where('id_article', $id);
+            if ($this->db->delete('tb_articles')) {
+                return true;
+            } else {
+                return false;
+            }
+         } else {
+             return null;
+         }
+     }
 }

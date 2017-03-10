@@ -1,11 +1,18 @@
- <section>
-        <div class="td-container" id="td-new-article">
+ <div id="td-new-article-content"></div>
+
+<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url() ?>assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url() ?>assets/js/handlebars-v4.0.5.js"></script>
+
+<script id="td-new-article" type="text/x-handlebars-template">
+     <section>
+        <div class="td-container">
             <div class="row">
                 <div class="td-container-app">
                     <?php echo form_open_multipart('article/insert', array('id' => 'form_save')) ?>
-                     <div id="td-loading" class="hidden">
+                        <div id="td-loading" class="hidden">
                         <div class="td-loading-container">
-                            <img src="http://lorempixel.com/1200/900/sports/" class="img-responsive thumbnail">
+                            <img src="{{url_back}}assets/img/hourglass.svg" class="img-responsive">
                             <p>Loading...</p>
                         </div>
                     </div> 
@@ -34,15 +41,13 @@
                         <?php echo form_input_textarea('description', 'Description') ?>
                         <p id="td-message" class="text-center"></p>
                     </div>
-                     <?php echo form_close() ?>
+                        <?php echo form_close() ?>
                 </div>
             </div>
         </div>
     </section>
+ </script>
 
-<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url() ?>assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url() ?>assets/js/handlebars-v4.0.5.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         // Compile article content
@@ -51,6 +56,8 @@
             url_back: '<?php echo $base_url; ?>'
         }
         tresd.compileTemplate("#td-new-article", articlecontext);
+
+        $("#td-new-article-content").html($("#td-new-article").html());
 
         $('#userfile').change(function () {
             var file = $("#userfile")[0].files[0];

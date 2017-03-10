@@ -5,7 +5,8 @@
                 <div class="td-container-app">
                      <div id="td-loading">
                         <div class="td-loading-container">
-                            <img src="http://lorempixel.com/1200/900/sports/" class="img-responsive thumbnail">
+                            <img src="<?php echo $base_url ?>assets/img/hourglass.svg" class="img-responsive">
+                            <h1>Articles APP</h1>
                             <p>Loading...</p>
                         </div>
                     </div>  
@@ -24,6 +25,12 @@
         <div class="td-container">
             <div class="row">
                 <div class="td-container-app">
+                    <div id="td-loading" class="hidden">
+                        <div class="td-loading-container">
+                            <img src="<?php echo $base_url ?>assets/img/hourglass.svg" class="img-responsive">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
                     <div class="td-header">
                         <div class="col-xs-12 col-lg-12">
                             <div class="row">
@@ -54,6 +61,7 @@
                                                 <p>{{description}}</p>
                                             </div>
                                         </div>
+                                        <a onclick="tresd.deleteArticle('{{id_article}}')" class="td-article-close" >Delete</a>
                                     </div>
                                 </div>
                             </a>
@@ -92,7 +100,7 @@
             if (existarticle) {
                 $("#td-message").append('No articles at the moment');
             }
-        }, 1000);
+        }, 500);
 
     });
 </script>

@@ -75,4 +75,17 @@ class Article extends CI_Controller {
             redirect(base_url());
         }
     }
+
+     public function delete($id = -1) {
+        if ($id == -1)
+            redirect(base_url());
+
+        $article = $this->articlemodel->delete($id);
+
+        if ($article) {
+            redirect(base_url());
+        } else {
+            echo "Article does not deleted";
+        }
+    }
 }

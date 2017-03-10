@@ -83,9 +83,9 @@ class Article extends CI_Controller {
         $article = $this->articlemodel->delete($id);
 
         if ($article) {
-            redirect(base_url());
+            echo json_encode(array('response' => true));
         } else {
-            echo "Article does not deleted";
+            echo json_encode(array('response' => false, 'message' => 'Article does not deleted'));
         }
     }
 }

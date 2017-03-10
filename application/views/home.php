@@ -100,7 +100,7 @@
             if (existarticle) {
                 $("#td-message").append('No articles at the moment');
             }
-        }, 500);
+        }, 5000);
 
     });
 </script>

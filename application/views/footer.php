@@ -17,9 +17,15 @@
                     beforeSend: function () {
                         $("#td-loading").removeClass("hidden");
                     },
+                    dataType : "json",
                     success: function(jsonData)
                     {
-                        $("#td-loading").addClass("hidden");
+                        if (jsonData.response == true) {
+                            window.location.href = '<?php echo $base_url ?>';
+                        } else {
+                            console.log(jsonData);
+                            $("#td-loading").addClass("hidden");
+                        }
                     },
                     error: function(jsonData)
                     {

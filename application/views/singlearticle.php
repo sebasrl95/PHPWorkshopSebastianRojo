@@ -5,7 +5,8 @@
                     <?php echo form_open_multipart('article/update', array('id' => 'form_save')) ?>
                      <div id="td-loading" class="hidden">
                         <div class="td-loading-container">
-                            <img src="http://lorempixel.com/1200/900/sports/" class="img-responsive thumbnail">
+                            <img src="<?php echo $base_url ?>assets/img/hourglass.svg" class="img-responsive">
+                            <h1>Articles APP</h1>
                             <p>Loading...</p>
                         </div>
                     </div> 
@@ -25,6 +26,7 @@
                     </div>
 
                     <div class="col-xs-12 col-lg-12">
+                        <a onclick="tresd.deleteArticle('{{id_article}}')" class="td-article-close pull-right" >Delete</a>
                         <div class="form-group">
                             <img id="td-image-article" src="{{base_url}}assets/img/{{image_name}}" name="td-image-article" class="img-responsive" class="img-responsive thumbnail">
                         </div>

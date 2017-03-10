@@ -116,7 +116,7 @@ section .td-article-container .td-article-content {
     padding: 5px;
 }
 
-section .td-article-container .td-article-close {
+section .td-article-close {
     position: absolute;
     right: 0;
     top: 2em;

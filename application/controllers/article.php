@@ -55,8 +55,22 @@ class Article extends CI_Controller {
 
     public function update() {
         $post = $this->input->post();
+        
+        if ($post['image_file'] != '') {
+            $this->load->model('file');
+            $filename = $this->file->uploadImage('./assets/img/', 'No es posible subir la imagen.');
+
+            if ($filename == null) {
+                echo "The image doesn't upload";
+            } else {
+                $post['file_name'] = $filename;
+                $data = array('title' => $post['title'], 'description' => $post['description'], 'image_name' => $post['file_name']);
+            }
+        } else {
+            $data = array('title' => $post['title'], 'description' => $post['description']);
+        }
+        
         $id = $post['id_article'];
-        $data = array('title' => $post['title'], 'description' => $post['description']);
         if ($this->articlemodel->update($id, $data)) {
             redirect(base_url());
         }

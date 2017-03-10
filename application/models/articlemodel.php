@@ -33,4 +33,17 @@ class ArticleModel extends CI_Model {
              return false;
          }
      }
+
+     public function update($id = -1, $data = null) {
+         if ($id != -1 || $data != null) {
+            $this->db->where('id_article', $id);
+            if ($this->db->update('tb_articles', $data)) {
+                return true;
+            } else {
+                return false;
+            }
+         } else {
+             return null;
+         }
+     }
 }

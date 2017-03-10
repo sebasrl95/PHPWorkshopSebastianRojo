@@ -18,6 +18,7 @@ Date: March 9, 2017
 - Added view of create article
 - Save article and redirect to home
 - List articles on home page
+- Update an article
 
 Version 1.1
 ================

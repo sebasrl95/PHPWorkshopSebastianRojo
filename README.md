@@ -8,12 +8,20 @@ This application allows create articles putting an image, title and description,
 Screenshots
 ===========
 
+Home page
+**************************
 ![Home page](https://github.com/sebasrl95/PHPWorkshopSebastianRojo/blob/master/screenshots/homepage.png)
 
+Splash
+**************************
 ![Splash](https://github.com/sebasrl95/PHPWorkshopSebastianRojo/blob/master/screenshots/splash.png)
 
+New article
+**************************
 ![New article](https://github.com/sebasrl95/PHPWorkshopSebastianRojo/blob/master/screenshots/newarticle.png)
 
+Edit article
+**************************
 ![Edit article](https://github.com/sebasrl95/PHPWorkshopSebastianRojo/blob/master/screenshots/editarticle.png)
 
 

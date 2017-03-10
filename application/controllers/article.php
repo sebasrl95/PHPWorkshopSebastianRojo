@@ -41,11 +41,16 @@ class Article extends CI_Controller {
         $post = $this->input->post();
         $this->load->model('file');
         $filename = $this->file->uploadImage('./assets/img/', 'No es posible subir la imagen.');
-        $post['file_name'] = $filename;
 
-        if ($this->articlemodel->insert($post)) {
-            redirect(base_url());
-        } 
+        if ($filename == null) {
+            echo "The image doesn't upload";
+        } else {
+            $post['file_name'] = $filename;
+
+            if ($this->articlemodel->insert($post)) {
+                redirect(base_url());
+            }    
+        }
     }
 
     public function update() {

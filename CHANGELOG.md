@@ -2,6 +2,13 @@
 Change Log
 ##########
 
+Version 1.3
+===========
+
+Date: March 10, 2017
+
+-
+
 Version 1.2
 ===========
 
@@ -9,6 +16,8 @@ Date: March 9, 2017
 
 - Included message if there's not articles
 - Added view of create article
+- Save article and redirect to home
+- List articles on home page
 
 Version 1.1
 ================

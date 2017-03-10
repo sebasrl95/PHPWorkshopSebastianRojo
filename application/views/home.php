@@ -40,12 +40,12 @@
                         <div class="col-xs-12 col-lg-12">
                         <p id="td-message" class="text-center"></p>
                         {{#each articles}}
-                            <a href="{{base_url}}article/post/{{id_article}}">>
+                            <a href="{{base_url}}article/post/{{id_article}}">
                                 <div class="td-article-container">
                                     <div class="row">
                                         <div class="col-xs-4 col-lg-4">
                                             <div class="td-article-image">
-                                                <img src="{{base_url}}/assets/img/{{image_name}}" alt="" class="img-responsive">
+                                                <img src="{{base_url}}assets/img/{{image_name}}" class="img-responsive">
                                             </div>    
                                         </div>
                                         <div class="col-xs-8 col-lg-8">

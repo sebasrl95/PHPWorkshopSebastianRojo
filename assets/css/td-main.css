@@ -73,6 +73,10 @@ section .td-container-app .td-header a {
     margin-top: 1em;
 }
 
+section .td-container-app .td-header input {
+    margin-top: 1em;
+}
+
 section .td-container-app .td-article-container {
     margin-top: 3%;
     width: 100%;

@@ -1,13 +1,18 @@
-##########
+
 Change Log
-##########
 
 Version 1.3
 ===========
 
 Date: March 10, 2017
 
--
+- Added splash at home
+- Added splash while an article is creating or updating
+- Added delete button on all articles
+- Added delete button on edit article
+- Update an article and redirect to home
+- Added confirmation before delete article
+- Wait time splash of 5 seconds
 
 Version 1.2
 ===========
